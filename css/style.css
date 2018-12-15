@@ -1,0 +1,128 @@
+/*Google Font*/
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Navbar*/
+a:link{
+  color: #00003E;
+}
+
+a:visited{
+	color: #00003E;
+}
+
+nav{
+	margin: 0px;
+    padding-top: 16px;
+}
+
+.navbar-brand img{
+	width: 30px;
+	height: 30px;
+}
+nav a{
+	text-decoration: none;
+	text-align: center;
+    padding: 14px 16px;
+}
+
+.active{
+	text-transform: uppercase;
+	color: #00003E;
+}
+
+nav a:hover {
+    background-color: grey;
+}
+
+/*Home Page*/
+.about_paragraph {
+	text-align: center;
+	margin:100px;
+}
+.cookbook {
+	margin-right:15px;
+	float: left;
+}
+
+/*Recipe Grid*/
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+img {
+  max-width:100%;
+  height:auto;
+}
+.cell img {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(100% / 3);
+  }
+}
+
+.cell {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .cell {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
+}
+
+/*Font Awesome*/
+i{
+	color: #00003E;
+}
+
+i:hover{
+	color: grey;
+}
+
+.main{
+	margin: 30px;
+}
+
+/*Footer grid*/
+footer{
+	margin: 16px;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+}
