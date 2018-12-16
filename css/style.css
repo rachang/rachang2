@@ -136,8 +136,6 @@ img:hover {
   bottom: 10px;
   background-color: #00003E;
   padding: 15px;
-  opacity: 0;
-  transition: all 0.4s ease-in-out 0s;
 }
 
 .scrollTop a {
