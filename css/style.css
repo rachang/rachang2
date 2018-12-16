@@ -37,16 +37,28 @@ nav a:hover {
 }
 
 /*Carousel*/
-#carouselButtons {
-    margin-left: 100px;
-    position: absolute;
-    bottom: 0px;
+.mySlides {
+	display:none;
+	text-align:center;
+	width: 70%;
+	display:block;
+	margin:auto;}
+.w3-center, .w3-container, .w3-section, .w3-large, .w3-text-white, .w3-display-bottommiddle {
+	width:70%;
+}
+.w3-left, .w3-right, .w3-badge {
+	cursor:pointer
+}
+.w3-badge {
+	height:13px;
+	width:13px;
+	padding:0;
 }
 
 /*Home Page*/
 .about_paragraph {
 	text-align: center;
-	margin:100px;
+	margin: 30px;
 }
 .cookbook {
 	margin-right:15px;

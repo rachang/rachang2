@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="css/html5reset-1.6.1.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -34,9 +35,20 @@
 		</header>
 		<div role="main" class="main" id="maincontent"> 
 			<div class="about_paragraph">
-				<p><img class="cookbook" src = "images/cookbook.jpg" alt = "Maangchi's Cookbook"> <h3>Hi! I’m Maangchi! </h3>I love to make and eat delicious food! Featured here are some of my personal and fan favorites. </p>
+				<p><h1>Hi! It's Maangchi!</h1>I love to make and eat delicious food. Featured on this site are <br>some of personal and fan favorites. Let's explore Korean cuisine together!</p>
+				<div class="w3-content w3-display-container">
+					<a href="bap.html"><img class="mySlides" src="images/kimchi bokkeumbap.jpg" alt="kimchi bokkeumbap"></a>
+					<a href="jjigae.html"><img class="mySlides" src="images/jogaetang.jpg" alt="jogaetang"></a>
+					<a href="banchan.html"><img class="mySlides" src="images/sigeumchi namul.jpg" alt="sigeumchi namul"></a>
+					<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle">
+						<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+						<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+						<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+						<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+						<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+					</div>
 			</div>
-
+			</div>
 		</div>
 		<footer>
 			<a target="_blank" rel="noreferrer" href="https://www.facebook.com/maangchi" aria-label="facebook icon"><i class="fab fa-facebook fa-3x"></i></a>
@@ -44,9 +56,34 @@
 			<a href="https://www.youtube.com/user/Maangchi" target="_blank" rel="noreferrer" aria-label="youtube icon"><i class="fab fa-youtube fa-3x"></i></a>
 			<a href="https://www.instagram.com/maangchi/" target="_blank" rel="noreferrer" aria-label="instagram icon"><i class="fab fa-instagram fa-3x" ></i></a>		
 		</footer>
-		<div id="stop" class="scrollTop">
-    		<span><a href="#">Top</a></span>
-  		</div>
 	</article>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function currentDiv(n) {
+		  showDivs(slideIndex = n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		     dots[i].className = dots[i].className.replace(" w3-white", "");
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " w3-white";
+		}
+	</script>
 </body>
 </html>
