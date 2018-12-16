@@ -37,6 +37,11 @@ nav a:hover {
 }
 
 /*Carousel*/
+#carouselButtons {
+    margin-left: 100px;
+    position: absolute;
+    bottom: 0px;
+}
 
 /*Home Page*/
 .about_paragraph {
