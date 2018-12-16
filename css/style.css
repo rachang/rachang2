@@ -36,6 +36,8 @@ nav a:hover {
     background-color: grey;
 }
 
+/*Carousel*/
+
 /*Home Page*/
 .about_paragraph {
 	text-align: center;
@@ -109,6 +111,22 @@ img:hover {
 	opacity: 0.5;
 }
 
+/*Scroll to Top*/
+
+.scrollTop {
+  position: fixed;
+  right: 1.5%;
+  bottom: 10px;
+  background-color: #00003E;
+  padding: 15px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.scrollTop a {
+  font-size: 18px;
+  color: #fff;
+}
 /*Font Awesome*/
 i{
 	color: #00003E;

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type='text/javascript'
+  src='http://code.jquery.com/jquery-2.0.2.js'></script>
+<link rel="stylesheet" type="text/css"
+  href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<script type='text/javascript'
+  src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css"
+  href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+<style type='text/css'>
+#carouselButtons {<!--from   w w  w  .  j a v a2 s .c o  m-->
+  margin-left: 100px;
+  position: absolute;
+  bottom: 0px;
+}
+</style>
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+$(function () {
+    $('#homeCarousel').carousel({
+        interval:2000,
+        pause: "false"
+    });
+    $('#playButton').click(function () {
+        $('#homeCarousel').carousel('cycle');
+    });
+    $('#pauseButton').click(function () {
+        $('#homeCarousel').carousel('pause');
+    });
+});
+});//]]>  
+</script>
+</head>
+<body>
+  <!-- Carousel -->
+  <div id="homeCarousel" class="carousel slide">
+    <!-- Menu -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Items -->
+    <div class="carousel-inner">
+      <!-- Item 1 -->
+      <div class="item active">
+        <img src="http://lorempixel.com/1500/600/abstract/1" />
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Bootstrap 3 Carousel Layout</h1>
+            <p>This is an example layout with carousel that uses the
+              Bootstrap 3 styles.</p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="http://getbootstrap.com">Learn
+                More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="item">
+        <img src="http://lorempixel.com/1500/600/abstract/2" />
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Changes to the Grid</h1>
+            <p>Bootstrap 3 still features a 12-column grid, but many of
+              the CSS class names have completely changed.</p>
+            <p>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="item">
+        <img src="http://lorempixel.com/1500/600/abstract/3" />
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Percentage-based sizing</h1>
+            <p>With "mobile-first" there is now only one percentage-based
+              grid.</p>
+            <p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="icon-prev"></span>
+    </a> <a class="right carousel-control" href="#myCarousel"
+      data-slide="next"> <span class="icon-next"></span>
+    </a>
+    <div id="carouselButtons">
+      <button id="playButton" type="button" class="btn btn-default btn-xs">
+        <span class="glyphicon glyphicon-play"></span>
+      </button>
+      <button id="pauseButton" type="button" class="btn btn-default btn-xs">
+        <span class="glyphicon glyphicon-pause"></span>
+      </button>
+    </div>
+  </div>
+  <!-- Post Info -->
+  <div
+    style='position: fixed; bottom: 0; left: 0; background: lightgray; width: 100%;'>
+    About this SO Question: <a
+      href='http://stackoverflow.com/q/20615100/1366033'>Add Play/Pause
+      button to bootstrap carousel</a><br /> Find documentation: <a
+      href='http://getbootstrap.com/css/'>Get Bootstrap 3.0</a><br /> Fork
+    This Skeleton Here <a href='http://jsfiddle.net/KyleMit/kcpma/'>Bootrsap
+      3.0 Skeleton</a><br />
+    <div>
+</body>
+</html>
